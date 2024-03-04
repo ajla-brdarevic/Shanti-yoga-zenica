@@ -38,7 +38,6 @@
 }
 
 
-
 /*About me*/
 .content {
   display: flex;
@@ -126,48 +125,6 @@
   transform: scale(1.1);
 }
 
-
-/*Creditentials*/
-.creditentials {
-  margin-top: 10%;
-}
-
-.creditentials h2 {
-  font-size: 28px;
-  margin-left: 11%;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin-left: 4%;
-  margin-right: 4%;
-  margin-top: 2%;
-  grid-gap: 1%;
-}
-
-.item {
-  padding: 20px;
-  text-align: center;
-}
-
-.item h3 {
-  text-align: left;
-  font-size: 20px;
-}
-
-.item p {
-  text-align: left;
-  font-size: 18px;
-}
-
-.item a:hover {
-  color: purple; 
-}
-
-.item a:visited {
-  color: purple; 
-}
 
 /*Reviews*/
 .reviews {
