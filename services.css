@@ -38,3 +38,45 @@ section {
     max-width: 50%;
     height: auto;
 }
+
+/*Contact*/
+.about_contact {
+    margin-top: 50px;
+    border-radius: 4%;
+    background-image: url(images/background.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  
+  .about_contact h2 {
+    font-size: 28px;
+    margin-left: 11%;
+    padding-top: 4%;
+    color: #d5cdf3;
+  }
+  
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+  }
+  
+  .contact-icons a {
+    display: inline-block;
+    margin: 0 30px;
+    transition: transform 0.3s ease;
+    margin-bottom: 50px;
+  }
+  
+  .contact-icons a img {
+    width: 30px; 
+    height: auto;
+  }
+  
+  .contact-icons a:hover {
+    transform: translateY(-5px); 
+  }
+  
+  
