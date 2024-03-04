@@ -28,6 +28,9 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #d5cdf3;
+    /*background-image: url(images/5547963.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
     z-index: 100;
   }
   

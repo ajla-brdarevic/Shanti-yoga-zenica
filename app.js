@@ -5,6 +5,16 @@ menuToggle.addEventListener('click', () => {
   navbar.classList.toggle('active');
 });
 
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.nav');
+  if (window.scrollY > 0) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+});
+
+
 //Hero image
 let currentSlide = 0;
 const slides = document.querySelectorAll('.hero-image');
@@ -19,4 +29,4 @@ function nextSlide() {
     showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 5000); // Automatski prelazak na sljedeću sliku svakih 5 sekundi
+setInterval(nextSlide, 5000); 
