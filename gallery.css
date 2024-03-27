@@ -1,0 +1,11 @@
+.cakra {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatski raspored slika */
+    gap: 10px; /* Prostor između slika */
+    margin-top: 5%;
+}
+
+.cakra img {
+    width: 100%; /* Sve slike zauzimaju punu širinu svog kontejnera */
+    height: auto; /* Visina se automatski prilagođava proporcijama slike */
+}
