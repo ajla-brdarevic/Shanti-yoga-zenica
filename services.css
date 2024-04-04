@@ -1,82 +1,141 @@
 /*Services*/
 section {
-    height: 100vh;
+  height: 100vh;
 }
 
 .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-top: 3%;
 }
 
 .details {
-    width: 60%;
-    padding: 20px;
-    box-sizing: border-box;
+  width: 60%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.details h2 {
-    font-size: 28px;
-    margin-left: 20%;
+.details h3 {
+  font-size: 26px;
+  margin-left: 20%;
 }
 
 .details p {
-    font-size: 18px;
-    text-align: justify;
-    margin-left: 20%;
+  font-size: 18px;
+  text-align: justify;
+  margin-left: 20%;
+}
+
+.details h4 {
+  margin-left: 20%;
+  font-size: 20px;
+}
+
+summary {
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 20%;
+}
+
+details p {
+  margin-top: 10px;
+}
+
+details[open] summary {
+  color: red;
+}
+
+.details img {
+  width: 150px;
+  height: auto;
+  margin-left: 50%;
+  margin-top: -3%;
+  margin-bottom: -3%;
+}
+
+.details span{
+  color: blue;
 }
 
 .images {
-    width: 40%;
-    text-align: center;
+  width: 40%;
+  text-align: center;
 }
 
 .images img {
-    max-width: 50%;
-    height: auto;
+  max-width: 50%;
+  height: auto;
 }
 
-/*Contact*/
-.about_contact {
-    margin-top: 50px;
-    border-radius: 4%;
-    background-image: url(images/background.jpg);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d5cdf3;
+    z-index: 1000;
+    margin-top: 10vh;
   }
-  
-  .about_contact h2 {
-    font-size: 28px;
-    margin-left: 11%;
-    padding-top: 4%;
-    color: #d5cdf3;
+
+  .navbar.active {
+    display: block;
   }
-  
-  .contact-icons {
+
+  .menu-toggle {
     display: flex;
-    justify-content: center;
+  }
+
+  .navbar li {
+    display: flex;
     align-items: center;
-    margin-top: 4%;
+    justify-content: center;
+    height: 15%;
   }
-  
-  .contact-icons a {
-    display: inline-block;
-    margin: 0 30px;
-    transition: transform 0.3s ease;
-    margin-bottom: 50px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #A6B1E1;
+    z-index: 1000;
+    margin-top: 10vh;
   }
-  
-  .contact-icons a img {
-    width: 30px; 
-    height: auto;
+
+  .navbar.active {
+    display: block;
   }
-  
-  .contact-icons a:hover {
-    transform: translateY(-5px); 
+
+  .menu-toggle {
+    display: flex;
   }
-  
-  
+
+  .navbar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .header {
+    align-items: center;
+    text-align: center;
+  }
+}
