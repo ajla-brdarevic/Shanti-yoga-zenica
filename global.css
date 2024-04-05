@@ -7,7 +7,6 @@ body {
     position: relative;
     width: 100%;
     height: 10vh;
-    background-color: #d5cdf3;
   }
   
   .sticky {
@@ -23,20 +22,16 @@ body {
   
   nav {
     top: 0;
-    display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     background-color: #d5cdf3;
-    /*background-image: url(images/5547963.jpg);
+    background-image: url(images/5547963.jpg);
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: cover;
     z-index: 100;
-  }
-  
-  nav img {
-    height: 10vh;
-    margin-left: 4%;
+    display: flex;    
+    justify-content: flex-end;
   }
   
   .menu-toggle {
@@ -57,7 +52,6 @@ body {
   
   .navbar {
     float: right;
-    margin-right: 20px;
   }
   
   .navbar li {
@@ -69,6 +63,7 @@ body {
   .navbar a {
     text-decoration: none;
     color: #22092C;
+    font-weight: bold;
   }
   
   .navbar a:hover {

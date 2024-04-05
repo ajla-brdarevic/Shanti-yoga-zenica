@@ -3,6 +3,11 @@ const navbar = document.querySelector('.navbar');
 
 menuToggle.addEventListener('click', () => {
   navbar.classList.toggle('active');
+  if (navbar.classList.contains('active')) {
+    document.body.style.overflow = 'hidden'; // Dodano
+  } else {
+    document.body.style.overflow = ''; // Dodano
+  }
 });
 
 window.addEventListener('scroll', function() {
@@ -15,7 +20,7 @@ window.addEventListener('scroll', function() {
 });
 
 
-//Hero image
+//Hero image 
 let currentSlide = 0;
 const slides = document.querySelectorAll('.hero-image');
 
@@ -29,7 +34,8 @@ function nextSlide() {
     showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 5000); 
+setInterval(nextSlide, 5000);
+
 
 //chakra
 var cakre = [
