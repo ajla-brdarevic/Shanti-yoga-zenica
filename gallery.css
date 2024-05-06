@@ -1,11 +1,203 @@
+h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.chakra-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.chakra-menu ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.chakra-menu li {
+  margin-right: 20px;
+}
+
+.chakra-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.chakra-menu a:hover {
+  color: purple;
+}
+
 .cakra {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatski raspored slika */
-    gap: 10px; /* Prostor između slika */
-    margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 5%;
 }
 
 .cakra img {
-    width: 100%; /* Sve slike zauzimaju punu širinu svog kontejnera */
-    height: auto; /* Visina se automatski prilagođava proporcijama slike */
+  width: 100%;
+  height: auto;
+}
+
+#cakra1 {
+  color: #D22B2B;
+}
+
+#cakra2 {
+  color: #F28C28;
+}
+
+#cakra3 {
+  color: #FFBF00;
+}
+
+#cakra4 {
+  color: #4CBB17;
+}
+
+#cakra5 {
+  color: #4169E1;
+}
+
+#cakra6 {
+  color: #4B0082;
+}
+
+#cakra7 {
+  color: #7F00FF;
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 5vh;
+  }
+
+  .navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d5cdf3;
+    z-index: 1000;
+    margin-top: 6vh;
+  }
+
+  nav {
+    height: 5vh;
+  }
+
+  .navbar.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d5cdf3;
+    z-index: 1000;
+    margin-top: 6vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15%;
+    justify-content: center;
+    margin-left: -10%;
+  }
+
+  .chakra-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .chakra-menu li {
+    margin: 5px;
+  }
+
+  .cakra {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    height: 8vh;
+  }
+
+  .navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d5cdf3;
+    z-index: 1000;
+    margin-top: 6vh;
+  }
+
+  nav {
+    height: 8vh;
+  }
+
+  .navbar.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d5cdf3;
+    z-index: 1000;
+    margin-top: 8vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15%;
+    justify-content: center;
+    margin-left: -10%;
+  }
+
+  .chakra-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .chakra-menu li {
+    margin: 5px;
+  }
 }
