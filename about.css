@@ -16,6 +16,18 @@
     margin-left: 10%;
 }
 
+.image-aboutme {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+}
+
+.image-aboutme img{
+  height: 30%;
+  width: 30%;
+  align-items: center;
+}
+
 /*Creditentials*/
 .creditentials {
     margin-top: 10%;
